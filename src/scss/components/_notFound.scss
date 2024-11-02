@@ -1,0 +1,110 @@
+@use '../abstracts' as *;
+
+.notFound {
+    margin-top: 60px;
+    margin-bottom: 84px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 16px;
+
+    h1 {
+        font-family: Manrope700;
+        font-size: 427px;
+        line-height: 469.7px;
+        color: #454545;
+        opacity: 0.1;
+        margin-bottom: 18px;
+        user-select: none;
+    }
+
+    p {
+        font-family: Manrope600;
+        font-size: 24px;
+        line-height: 33.6px;
+        color: #454545;
+        margin-bottom: 60px;
+    }
+
+    button {
+        width: 216px;
+        height: 50px;
+        border-radius: 100px;
+        background: #454545;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Manrope500;
+        font-size: 16px;
+        line-height: 21.86px;
+        transition: .2s;
+
+        &:hover {
+            opacity: .9;
+        }
+
+        &:active {
+            scale: .97;
+        }
+
+    }
+}
+
+@media (max-width: 914px) {
+    .notFound {
+        h1 {
+            font-size: 350px;
+        }
+    }
+}
+
+@media (max-width: 782px) {
+    .notFound {
+        margin-top: 30px;
+        margin-bottom: 60px;
+
+        h1 {
+            font-size: 300px;
+            line-height: 300px;
+        }
+    }
+}
+
+@media (max-width: 642px) {
+    .notFound {
+        h1 {
+            font-size: 250px;
+            line-height: 250px;
+        }
+    }
+}
+
+@media (max-width: 516px) {
+    .notFound {
+        height: 70vh;
+
+        h1 {
+            font-size: 170px;
+            line-height: 170px;
+            margin-bottom: 18px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: auto;
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .notFound {
+        h1 {
+            font-size: 150px;
+        }
+    }
+}
